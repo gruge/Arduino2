@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="mystyle2.css">
+		<title>Arduino1</title>
+		<header class="header">KY-018 Photoresistor</header>
+	</head>
+<body>
+	<table>
+	<td><img src="Module2.png" alt="Module" width="500" height="500"></td>
+	</table>
+	
+	<table class="table1">
+	<td><img src="ModuleBlueprint2.png" alt="ModuleBlueprint" width="600" height="500"></td>
+	</table>
+	
+	<table class="table2">
+	<tr>
+		<td>
+		<h1>Brief description of the module</h1>
+		"KY-018" - the module contains a photoresistor (light sensor), which can be used to measure 
+		the intensity of light or determine its presence / absence. In the absence of light, 
+		the resistance of the photoresistor is large and reaches 1 mOhm, and when it is illuminated, 
+		it drops to several Ohms. Photoresistors are semiconductor photosensitive devices (sensors),
+		which have high sensitivity, fast response, stable spectral characteristics and are widely used 
+		in video cameras, solar-powered garden lamps, light sensors, night lights and other lighting 
+		control devices.
+		</td>
+	</tr>
+	</table>
+	
+		<table class="table3">
+	<tr>
+		<td>
+			<h1>Code:</h1>
+		int sensorPin = 2; //define analog pin 2</br>
+int value = 0;</br>
+void setup() {</br>
+	Serial.begin(9600);</br>
+}</br>
+void loop() {</br>
+	value = analogRead(sensorPin);</br>
+	Serial.println(value, DEC); // light intensity</br>
+	// high values for bright environment</br>
+	// low values for dark environment</br>
+	delay(100);</br>
+}</br>      
+		</td>
+	</tr>
+	</table>
+	<table class="table4">
+	<tr>
+	<td>
+		<a href="http://scrumpoker.eu/arduino/photoresistor.php">Go to original website</a>
+	</td>
+	</tr>
+	</table>
+</body>
+</html>
